@@ -1,5 +1,5 @@
 # emacs
-Emacs configuration files
+Emacs configuration files. Currently this requires emacs 25.1.
 
 ## Setup
 
