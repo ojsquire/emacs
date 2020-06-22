@@ -1,5 +1,11 @@
 # emacs
-Emacs configuration files. Currently this requires emacs 25.1.
+Emacs configuration files. Currently this requires emacs 25.1. On Ubuntu 16.04 (Xenial) You can install this as follows:
+
+```
+sudo apt-add-repository -y ppa:adrozdoff/emacs
+sudo apt update
+sudo apt install emacs25
+```
 
 ## Setup
 
