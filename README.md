@@ -12,3 +12,11 @@ sudo apt install emacs25
 * Navigate to home dir: `cd`
 * Clone down repo: `git clone git@github.com:ojsquire/emacs.git`
 * Set up symoblic link to `.emacs.d`: `ln -s emacs/.emacs.d/ .emacs.d`
+
+## Python linting
+To get linting working nicely, you will need to install these Python packages, which are picked up by emacs by the `pychecker.sh` script:
+
+```
+pip3 install pyflakes
+pip3 install pep8
+```
