@@ -146,3 +146,7 @@
 ;; JEDI
 (add-hook 'python-mode-hook 'jedi:setup)
 (setq jedi:complete-on-dot t)
+
+
+;; MAGIT
+(global-set-key (kbd "C-x g") 'magit-status)
