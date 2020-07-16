@@ -1,5 +1,5 @@
-# emacs
-Emacs configuration files.
+# Emacs
+In this repo you will find my Emacs configuration files.
 
 # Prerequisits
 Since I primarily develop in Python, there are several packages in `init.el` that require Python packages to be installed. So first, I will go through my preferred way to set up Python on a machine. Then we will go through the Emacs installation.
