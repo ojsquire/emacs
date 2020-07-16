@@ -56,8 +56,7 @@ pip install jedi epc
 To get linting working nicely, you will need to install these Python packages, which are picked up by emacs by the `pychecker.sh` script (not currently used):
 
 ```
-pip install pyflakes
-pip install pep8
+pip install pyflakes pep8
 ```
 
 # Installation
