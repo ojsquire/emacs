@@ -26,6 +26,29 @@ sudo apt install emacs26
 * Clone down repo: `git clone git@github.com:ojsquire/emacs.git`
 * Set up symoblic link to `init.el`: `ln -s ~/git_tree/emacs/init.el ~/.emacs.d/init.el`
 
+## Python
+There are some packages in `init.el` that depend on certain Python packages being installed (e.g. Jedi). This brings us onto the wider topic of setting up Python properly. One potential source of problems with Python is the presence of different versions. This can lead to issues like packages being installed in the wrong version and not in the one you want. The simplest way to deal with this is to use [`pyenv`](https://github.com/pyenv/pyenv). Let's set this up before starting up emacs.
+
+### pyenv
+
+#### On Ubuntu
+* Install Python build dependencies:
+```
+sudo apt-get update
+sudo apt-get install --no-install-recommends make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev
+```
+
+* Install pyenv
+1. Run these commands:
+```
+git clone https://github.com/pyenv/pyenv.git ~/.pyenv
+echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
+echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
+echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.bashrc
+```
+2. Now restart your shell
+3. Install the version of Python you want to use, e.g. `pyenv install 3.8.3`
+
 ## Python linting
 To get linting working nicely, you will need to install these Python packages, which are picked up by emacs by the `pychecker.sh` script:
 
