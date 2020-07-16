@@ -1,10 +1,23 @@
 # emacs
-Emacs configuration files. Currently this requires emacs 25.1. On Ubuntu 16.04 (Xenial) You can install this as follows:
+Emacs configuration files.
+
+## Installation
+To install the latest version of Emacs (26.3) do the following:
+
+### Remove older emacs versions (optional)
+On Ubuntu 18.04 (Bionic), first uninstall any older versions of Emacs:
+`sudo apt-get remove emacs`
+
+If that returns "Package 'emacs' is not installed, so not removed", try:
+`sudo apt-get remove emacs25`
+
+### Install emacs26
+To get emacs26 follow [these instructions](http://ubuntuhandbook.org/index.php/2019/02/install-gnu-emacs-26-1-ubuntu-18-04-16-04-18-10/):
 
 ```
-sudo apt-add-repository -y ppa:adrozdoff/emacs
+sudo add-apt-repository ppa:kelleyk/emacs
 sudo apt update
-sudo apt install emacs25
+sudo apt install emacs26
 ```
 
 ## Setup
