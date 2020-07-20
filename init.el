@@ -150,3 +150,8 @@
 
 ;; MAGIT
 (global-set-key (kbd "C-x g") 'magit-status)
+
+
+;; SYMLINKS
+; Always follow symlinks and edit the actual file
+(setq vc-follow-symlinks t)
