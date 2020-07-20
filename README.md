@@ -109,3 +109,11 @@ source .venv/bin/activate
 ```
 
 If this works you should see your command prompt change to the name `(.venv)`. Now when you install any Python packages they will _only_ be installed in your virtual env and only be available to this project. Make sure to deactivate your env when you are not working on this project with `deactivate`, and make sure to reactivate you virtual env again when you start working on the project again with the `source` command as above!
+
+### Installing Python libs in virtual environment
+Since your virtual env points to a clean Python installation, you will need to install all of the previous packages into this environment before using emacs:
+
+```
+pip install --upgrade pip
+pip install virtualenv epc jedi pyflakes pep8
+```
