@@ -26,7 +26,6 @@
         helm
         jedi
         magit
-        highlight-indent-guides
         moe-theme
         ))
 
@@ -63,9 +62,6 @@
 ;; INDENTATION ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Replaces tabs with spaces
 (setq-default indent-tabs-mode nil)
-
-;; Use highlight-indent mode automatically
-(add-hook 'prog-mode-hook 'highlight-indent-guides-mode)
 
 
 ;; COPY AND PASTE ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
