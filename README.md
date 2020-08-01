@@ -124,6 +124,7 @@ If you have already created a virtualenv on another machine, or the repo you are
 ```
 virtualenv --python=/path/to/python/version .venv
 source .venv/bin/activate
+pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
