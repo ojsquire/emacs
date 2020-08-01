@@ -117,3 +117,18 @@ Since your virtual env points to a clean Python installation, you will need to i
 pip install --upgrade pip
 pip install virtualenv epc jedi pyflakes pep8
 ```
+
+### Installing environment from another config
+If you have already created a virtualenv on another machine, or the repo you are cloning already has one specified in a `requirements.txt`, you can run the following instead:
+
+```
+virtualenv --python=/path/to/python/version .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
+
+This will ensure all the same modules are installed as required by the software. If you want to create a `requirements.txt` to be used to "save" your virtual environment without commiting it to git, you can run (from root dir):
+
+```
+pip freeze > requirements.txt
+```
